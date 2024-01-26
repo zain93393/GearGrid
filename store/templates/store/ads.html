@@ -1,0 +1,283 @@
+
+{% extends "store/base.html" %}
+{%block content%}
+{% load static %}
+<style>
+    .background{
+    border: 1px solid red;
+    background-image: none !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-color: #000000;
+    height: 10px !important;
+    text-align: center;
+}
+</style>
+
+</div>
+<div class="container-fluid bg-light pt-3">
+ <h2 class="text-center my-4">Browse Available Cars</h2>
+ <div class="car-slider owl-carousel owl-theme">
+   <div class="row text-center">
+     {% for post in posts%}
+     {% if forloop.counter0|divisibleby:4 %}
+       </div><div class="row">
+     {% endif %}
+
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <div class="car-item">
+        <a href="{% url 'store-detail' post.id %}">
+           <img src="{{ post.image.url }}" alt="{{ post.model }}">
+         </a>
+         <div class="car-details">
+           <p class="car-name">{{post.car_company}}  {{ post.car_model }}</p>
+           <p class="car-price">{{ post.car_price }}</p>
+           <p class="car-info">{{ post.car_year }} | {{ post.transmission_type }} | {{ post.car_city }}</p>
+         </div>
+       </div>
+     </div>
+
+   {% endfor %}
+ </div>
+</div>
+</div>
+<div>
+
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+
+ <section class="mb-4">
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fa fa-google"></i></a>
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+   <a class="btn btn-primary btn-floating m-1" style="background-color: #CD201F" href="#!" role="button"><i class="fa fa-youtube-play"></i></a>
+ </section>
+
+ <section class="">
+   <form action="">
+     <div class="row d-flex justify-content-center">
+       <div class="col-auto">
+         <p class="pt-2">
+           <strong>Sign up for our newsletter</strong>
+         </p>
+       </div>
+       <div class="col-md-5 col-12">
+         <div class="form-outline form-white mb-2">
+           <input type="email" id="mailing" class="form-control" />
+           <label class="form-label" for="mailing">Email address</label>
+         </div>
+       </div>
+       <div class="col-auto">
+         <button type="submit" class="btn btn-outline-light mb-2">
+           Subscribe
+         </button>
+       </div>
+     </div>
+   </form>
+ </section>
+
+<section class="mb-3">
+ <p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+   distinctio earum repellat quaerat voluptatibus placeat nam,
+   commodi optio pariatur est quia magnam eum harum corrupti dicta,
+   aliquam sequi voluptate quas.
+ </p>
+</section>
+
+<section class="">
+ <div class="row">
+   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+     <h6 class="text-uppercase">Cars By Make</h5>
+     <ul class="list-unstyled mb-0">
+       <li>
+         <a href="#!" class="text-white">Toyota Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Suzuki Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Honda Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Mistubishi Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Nissan Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Hyundai Cars for Sale</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">BMW Cars for Sale</a>
+       </li>
+     </ul>
+   </div>
+   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+     <h6 class="text-uppercase">Cars By City</h5>
+
+     <ul class="list-unstyled mb-0">
+       <li>
+         <a href="#!" class="text-white">Cars in Lahore</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Karachi</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Islamabad</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Rawapindi</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Peshawar</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Gujaranwala</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Cars in Sialkot</a>
+       </li>
+     </ul>
+   </div>
+   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+     <h6 class="text-uppercase">Explore GearGrind</h5>
+
+     <ul class="list-unstyled mb-0">
+       <li>
+         <a href="#!" class="text-white">Used Cars</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">New Cars</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Forums</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Sitemap</a>
+       </li>
+     </ul>
+   </div>
+
+   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+     <h6 class="text-uppercase">Sell on GearGrind</h5>
+
+     <ul class="list-unstyled mb-0">
+       <li>
+         <a href="#!" class="text-white">Sell Your Car</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Sell Your Bike</a>
+       </li>
+       <li>
+         <a href="#!" class="text-white">Sell Your Accessory</a>
+       </li>
+     </ul>
+   </div>
+ </div>
+
+<br>
+
+<div class="row">
+   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <h6 class="text-uppercase">Cars By Category</h5>
+
+       <ul class="list-unstyled mb-0">
+         <li>
+           <a href="#!" class="text-white">Jeep</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Japenese Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Automatic Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">4x4 Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Imported Cars</a>
+         </li>
+       </ul>
+     </div>            
+
+
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <h6 class="text-uppercase">Cars By Body Type</h5>
+
+       <ul class="list-unstyled mb-0">
+         <li>
+           <a href="#!" class="text-white">Sedans</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Hatchbacks</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">SUV</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Crossover</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Mini Van</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">MPV</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Double Cabin</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Compact Sedan</a>
+         </li>
+       </ul>
+     </div>            
+
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <h6 class="text-uppercase">Cars By Color</h5>
+
+       <ul class="list-unstyled mb-0">
+         <li>
+           <a href="#!" class="text-white">White Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Silver Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Black Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Grey Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Blue Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Red Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Green Cars</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">Gold Cars</a>
+         </li>
+       </ul>
+     </div>
+     
+</div>
+
+<!--Grid row-->
+</section>
+
+</div>
+<!-- Grid container -->
+{% endblock content%}

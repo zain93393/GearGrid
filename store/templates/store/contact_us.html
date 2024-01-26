@@ -1,0 +1,120 @@
+
+{% extends "store/base.html" %}
+{%block content%}
+{% load static %}
+      <div class="container-fluid bg-white" class="content">
+        <div class="container-lg px-5 py-5">
+          <h3 class="display-6 text-bold">Contact Us</h3>
+          <br>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+
+          <form class="form" action="">
+            <div class="form-group">
+              <label class="py-3" for="name">Name</label>
+              <input type="text" class="form-control " id="name">
+            </div>
+            <div class="form-group">
+              <label class="py-3" for="email">Email address *</label>
+              <input type="email" class="form-control" id="email" required="true">              
+            </div>
+            <div class="form-group">
+              <label class="py-3" for="Phone_Number">Phone Number</label>
+              <input type="tel" class="form-control" id="Phone_Number">
+            </div>
+            <div class="form-group">
+              <label class="py-3" for="comment">Comment</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger mt-5">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <script>const formInputs = document.querySelectorAll('.form-control');
+        formInputs.forEach(input => {
+          input.addEventListener('mouseover', () => {
+            input.style.borderColor = 'red';
+          });
+          input.addEventListener('mouseout', () => {
+            input.style.borderColor = 'initial';
+          });
+        });</script>
+
+        <div class="container-fluid banner bg-danger text-white d-flex flex-row justify-content-center align-items-center  animate__animated animate__fadeInUp">
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class='fa fa-phone display-6' style='color:red'></i>
+              </h4>
+              <h5>Expert Help</h5>
+                <p class="card-text">Expert support so you get exactly what you need.</p>
+            </div>
+            
+          </div>
+          
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class='fa fa-line-chart display-6' style='color: red'></i>
+              </h4>
+              <h5 class="card-title">Price Protection</h5>
+              <p class="card-text">Find a lower price and we'll match it. Guaranteed!</p>
+            </div>
+          </div>
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <i class="bi bi-truck-fill display-5 text-danger mb-3"></i>
+              <h4 class="card-title">
+                <i class='fa fa-repeat display-6' style='color:red'></i>
+              </h4>
+              <h5 class="card-title">Free Returns</h5>
+              <p class="card-text">We make it simple to shop, save and return.</p>
+            </div>
+          </div>
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <i class="bi bi-star-fill display-5 text-danger mb-3"></i>
+              <h4 class="card-title">
+                <i class='fa fa-check display-6' style='color:red'></i>
+              </h4>
+              <h5 class="card-title">TrustScore 5.0</h5>
+              <p class="card-text">Over 3000 Trustpilot reviews.</p>
+            </div>
+          </div>
+        </div>
+      
+        <script>const cardBodies = document.querySelectorAll('.card-body');
+
+          cardBodies.forEach(cardBody => {
+            cardBody.addEventListener('mouseover', () => {
+              cardBody.style.backgroundColor = 'rgb(204, 255, 255)'; // Add a light red background
+              cardBody.style.boxShadow = '0 0 8px rgba(0, 0, 0, 0.7)'; // Add a subtle box shadow
+            });
+          
+            cardBody.addEventListener('mouseout', () => {
+              cardBody.style.backgroundColor = 'initial'; // Reset background color
+              cardBody.style.boxShadow = 'none'; // Remove box shadow
+            });
+          });</script>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"       
+        integrity="sha384-MhqYbwqCHb7+vV2BJMgowR5ypGTp6fzqUYO3kYPqYPd8/O/NqW6N8q5vLznk" crossorigin="anonymous">
+        </script>
+      </div>
+
+      
+
+  
+    </div>
+    <!-- Grid container -->
+  
+   
+</body>
+</html>
+
+{% endblock content%}

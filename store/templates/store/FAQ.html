@@ -1,0 +1,301 @@
+
+{% extends "store/base.html" %}
+{%block content%}
+{% load static %}
+      <div class="container-fluid bg-white" class="content">
+        <div class="container-fluid">
+          <div class="background-FAQ">
+            <br><br><br><br><br><br><br>
+              <blockquote class="blockquote">
+                <p class="text-white pt-5 mt-5">Your Questions, answered</p>
+              </blockquote>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="FAQs" class="justify-content-center">
+            <div class="Q-type 1 pb-5">
+              <h3 class="text-bold">
+                Category 1
+              </h3>
+              <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-show collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 1
+                    </div>
+                  </div>
+                </div>
+              </div>            
+  
+              <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-show collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 2
+                    </div>
+                  </div>
+                </div>
+  
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-show collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 3
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 4
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-show collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 4
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>  
+          
+          <div class="Q-type 2 pb-5">
+            <h3 class="text-bold">
+              Category 2
+            </h3>
+            <div class="accordion" id="accordionFAQ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_Q_One">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Q_One" aria-expanded="false" aria-controls="collapse_Q_One">
+                    <i class='fa fa-file-text' style='color: darkblue'></i>
+                    <hr> Question 1
+                  </button>
+                </h2>
+                <div id="collapse_Q_One" class="accordion-show collapse" aria-labelledby="heading_Q_One" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">
+                    Answer to Question 1
+                  </div>
+                </div>
+              </div>
+            </div>            
+  
+            <div class="accordion" id="accordionFAQ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_Q_Two">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Q_Two" aria-expanded="false" aria-controls="collapse_Q_Two">
+                    <i class='fa fa-file-text' style='color: darkblue'></i>
+                    <hr> Question 2
+                  </button>
+                </h2>
+                <div id="collapse_Q_Two" class="accordion-show collapse" aria-labelledby="heading_Q_Two" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">
+                    Answer to Question 2
+                  </div>
+                </div>
+              </div>
+  
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_Q_Three">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Q_Three" aria-expanded="false" aria-controls="collapse_Q_Three">
+                    <i class='fa fa-file-text' style='color: darkblue'></i>
+                    <hr> Question 3
+                  </button>
+                </h2>
+                <div id="collapse_Q_Three" class="accordion-show collapse" aria-labelledby="heading_Q_Three" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">
+                    Answer to Question 3
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_Q_Four">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Q_Four" aria-expanded="flase" aria-controls="collapse_Q_Four">
+                    <i class='fa fa-file-text' style='color: darkblue'></i>
+                    <hr> Question 4
+                  </button>
+                </h2>
+                <div id="collapse_Q_Four" class="accordion-show collapse" aria-labelledby="heading_Q_Four" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">
+                    Answer to Question 4
+                  </div>
+                </div>
+              </div>   
+             </div>
+            </div>
+  
+            <div class="Q-type 3 pb-5">
+              <div class="Cat_Title">
+                <h3 class="text-bold">
+                  Category 3
+                </h3>
+              </div>
+              <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading_K_One">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_K_One" aria-expanded="true" aria-controls="collapse_K_One">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 1
+                    </button>
+                  </h2>
+                  <div id="collapse_K_One" class="accordion-show collapse" aria-labelledby="heading_K_One" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 1
+                    </div>
+                  </div>
+                </div>
+              </div>            
+  
+              <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading_K_Two">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_K_Two" aria-expanded="flase" aria-controls="collapse_K_Two">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 2
+                    </button>
+                  </h2>
+                  <div id="collapse_K_Two" class="accordion-show collapse" aria-labelledby="heading_K_Two" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 2
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading_K_Three">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_K_Three" aria-expanded="flase" aria-controls="collapse_K_Three">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 3
+                    </button>
+                  </h2>
+                  <div id="collapse_K_Three" class="accordion-show collapse" aria-labelledby="heading_K_Three" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 3
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading_K_Four">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_K_Four" aria-expanded="false" aria-controls="collapse_K_Four">
+                      <i class='fa fa-file-text' style='color: darkblue'></i>
+                      <hr> Question 4
+                    </button>
+                  </h2>
+                  <div id="collapse_K_Four" class="accordion-show collapse" aria-labelledby="heading_K_ Four" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      Answer to Question 4
+                    </div>
+                  </div>
+                </div>            
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container-fluid banner bg-danger text-white d-flex flex-row justify-content-center align-items-center  animate__animated animate__fadeInUp">
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class='fa fa-phone display-6' style='color:#5b525b'></i>
+              </h4>
+              <h5>Expert Help</h5>
+                <p class="card-text">Expert support so you get exactly what you need.</p>
+            </div>
+            
+          </div>
+          
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <i class="bi bi-check -circle-fill display-5 text-danger mb-3"></i>
+              <h4 class="card-title">
+                <i class='fa fa-line-chart display-6' style='color:#5b525b'></i>
+              </h4>
+              <h5 class="card-title">Price Protection</h5>
+              <p class="card-text">Find a lower price and we'll match it. Guaranteed!</p>
+            </div>
+          </div>
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <i class="bi bi-truck-fill display-5 text-danger mb-3"></i>
+              <h4 class="card-title">
+                <i class='fa fa-repeat display-6' style='color:#5b525b'></i>
+              </h4>
+              <h5 class="card-title">Free Returns</h5>
+              <p class="card-text">We make it simple to shop, save and return.</p>
+            </div>
+          </div>
+          <div class="card text-center border-0 m-3">
+            <div class="card-body">
+              <i class="bi bi-star-fill display-5 text-danger mb-3"></i>
+              <h4 class="card-title">
+                <i class='fa fa-check display-6' style='color:#5b525b'></i>
+              </h4>
+              <h5 class="card-title">TrustScore 5.0</h5>
+              <p class="card-text">Over 3000 Trustpilot reviews.</p>
+            </div>
+          </div>
+        </div>
+      
+        
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"       
+        integrity="sha384-MhqYbwqCHb7+vV2BJMgowR5ypGTp6fzqUYO3kYPqYPd8/O/NqW6N8q5vLznk" crossorigin="anonymous">
+        </script>
+      </div>
+
+      
+
+        <!-- Footer -->
+      <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+        <div class="container p-4">
+  
+          <section class="mb-4">
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fa fa-google"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #CD201F" href="#!" role="button"><i class="fa fa-youtube-play"></i></a>
+          </section>
+  
+      
+     
+
+        <!--Grid row-->
+      </section>
+  
+    </div>
+    <!-- Grid container -->
+  
+  <!-- Footer -->
+        
+    </div>
+
+    <script src="dynamics.js"></script>
+</body>
+</html>
+
+{% endblock content%}
